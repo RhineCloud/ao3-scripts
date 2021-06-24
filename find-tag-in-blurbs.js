@@ -1,10 +1,12 @@
 // ==UserScript==
 // @name         AO3: [Wrangling] Find the Tag in the Blurb
 // @namespace    https://github.com/RhineCloud
-// @version      0.1
+// @version      0.2
 // @author       Rhine
 // @description  emphasise the tag in big at the top of a page in work blurbs
 // @include      *://*archiveofourown.org/tags/*
+// @include      *://*archiveofourown.org/works?*tag_id=*
+// @include      *://*archiveofourown.org/bookmarks?*tag_id=*
 // @exclude      *://*archiveofourown.org/tags/*/wrangle*
 // @exclude      *://*archiveofourown.org/tags/*/edit
 // @exclude      *://*archiveofourown.org/tags/*/comments*
