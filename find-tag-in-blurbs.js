@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AO3: [Wrangling] Find the Tag in the Blurb
 // @namespace    https://github.com/RhineCloud
-// @version      1.0
+// @version      1.0.1
 // @author       Rhine
 // @description  go through work blurbs and mark the tags that match the big one in the heading
 // @include      *://*archiveofourown.org/tags/*
@@ -171,7 +171,7 @@ var auto_mark_rels = false;
             case 'Relationship':
               tag_cat = 'relationships';
               break;
-            case 'Additional Tags';
+            case 'Additional Tags':
               tag_cat = 'freeforms';
               break;
             default:
