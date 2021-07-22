@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AO3: [Wrangling] Find the Tag in the Blurb
 // @namespace    https://github.com/RhineCloud
-// @version      1.0.1
+// @version      1.0.2
 // @author       Rhine
 // @description  go through work blurbs and mark the tags that match the big one in the heading
 // @include      *://*archiveofourown.org/tags/*
@@ -77,7 +77,7 @@ var auto_mark_rels = false;
           button_html = button_html + 'An Erroneous Button';
       }
       button_html = button_html + '</a></li></ul>';
-      $('div[id="main"] ul.navigation:has(span.current)').append(button_html);
+      $('div[id="main"] ul.navigation').append(button_html);
     }
     // removing buttons
     function remove_button(button_id_to_remove) {
