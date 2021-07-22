@@ -56,7 +56,7 @@ var auto_mark_rels = false;
     // some functions to help the entire process
     // adding various buttons
     function add_button(button_id_to_add) {
-      var button_html = '<ul class="navigation actions" role="navigation"><li><a id="' + button_id_to_add + '">';
+      var button_html = '<ul class="actions"><li><a id="' + button_id_to_add + '">';
       switch (button_id_to_add) {
         case 'mark_tag':
           button_html = button_html + 'Mark plain uses';
