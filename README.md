@@ -1,6 +1,7 @@
 # ao3-scripts
 
 As with other userscripts, just point the add-on you're using to the code file of the script you want.
+
 [I've also put it on greasyfork, if you prefer to install from there.](https://greasyfork.org/en/scripts/428350-ao3-wrangling-find-the-tag-in-the-blurb)
 
 ## find-tag-in-blurbs
