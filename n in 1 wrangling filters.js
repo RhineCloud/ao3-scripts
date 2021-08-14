@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		AO3: [Wrangling] n-in-1 Wrangling Home Filter(s)
 // @description	have different categories of wrangling home filters
-// @version		1.0.1
+// @version		1.0.2
 // @author		Rhine
 // @namespace	https://github.com/RhineCloud
 // @match		*://*archiveofourown.org/tag_wranglers/*
@@ -10,7 +10,7 @@
 // @license		GPL-3.0 <https://www.gnu.org/licenses/gpl.html>
 // ==/UserScript==
 
-// detailed instructions and explanations at: ////
+// detailed instructions and explanations at: https://github.com/RhineCloud/ao3-scripts/blob/main/n-in-1-filters-readme.md#n-in-1-wrangling-home-filters
 
 // SETTINGS //
 
