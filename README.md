@@ -16,3 +16,7 @@ There's a SETTINGS section at the beginning where you can change:
   * **If any of them is set to true it'll go request the tags landing page along with any works/bookmarks landing page of a canonical tag you open. This may hasten your journey into ao3jail ("Retry later").**
 
 It may be worth noting that when a button uses "check" it means that it'll open the tags landing page, while if there's only "mark" it means that all the necessary data is available already.
+
+## n-in-1 wrangling filters
+
+Check out the separate [n-in-1 filters readme doc](https://github.com/RhineCloud/ao3-scripts/blob/main/n-in-1-filters-readme.md#n-in-1-wrangling-home-filters).
