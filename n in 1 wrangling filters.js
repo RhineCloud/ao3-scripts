@@ -10,7 +10,8 @@
 // @license		GPL-3.0 <https://www.gnu.org/licenses/gpl.html>
 // ==/UserScript==
 
-// detailed instructions and explanations at: https://github.com/RhineCloud/ao3-scripts/blob/main/n-in-1-filters-readme.md#n-in-1-wrangling-home-filters
+// detailed instructions and explanations at:
+// https://github.com/RhineCloud/ao3-scripts/blob/main/n-in-1-filters-readme.md#n-in-1-wrangling-home-filters
 
 // SETTINGS //
 
