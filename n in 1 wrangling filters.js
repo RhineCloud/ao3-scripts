@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		AO3: [Wrangling] n-in-1 Wrangling Home Filter(s)
 // @description	have different categories of wrangling home filters
-// @version		1.0
+// @version		1.0.1
 // @author		Rhine
 // @namespace	https://github.com/RhineCloud
 // @match		*://*archiveofourown.org/tag_wranglers/*
@@ -254,7 +254,7 @@ var known_fandoms = my_fandoms.trim().split('\n');
 		switch (fandom_ref.length) {
 			case 4:
 				// add solo-/co-wrangling status
-				var wrangler = fandom_ref[3].trim()
+				var wrangler = fandom_ref[3].trim();
 				if (wrangler == 'co') {
 					var wrangler_class = get_classes('fandom', 'co-wrangled');
 					$(this).addClass(wrangler_class);
@@ -392,7 +392,7 @@ var known_fandoms = my_fandoms.trim().split('\n');
 	remove_option('fandom', 'co-ro3');
 	if (!has_co) {
 		remove_option('fandom', 'solo-unwrangled');
-		remove_option('fandom', 'co-unwrangled')
+		remove_option('fandom', 'co-unwrangled');
 	}
 		
 	// find out how many options are left
