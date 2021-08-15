@@ -17,6 +17,12 @@ There's a SETTINGS section at the beginning where you can change:
 
 It may be worth noting that when a button uses "check" it means that it'll open the tags landing page, while if there's only "mark" it means that all the necessary data is available already.
 
+## new-tag-char-counter
+
+Everytime you're done hitting your keys in the Tag Name field on the Create New Tag page or the Synonym of field on Tag Edit pages, it'll update a smol character counter placed right under the legend for the input fields.
+
+It'll also make the colour of the input field change depending on how long your tag is.
+
 ## n-in-1 wrangling filters
 
 Check out the separate [n-in-1 filters readme doc](https://github.com/RhineCloud/ao3-scripts/blob/main/n-in-1-filters-readme.md#n-in-1-wrangling-home-filters).
