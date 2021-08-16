@@ -30,7 +30,7 @@
                          'background-color':'#900'});
         } else {
             $(this).css({'color':'#000',
-                         'background-color':'#099'});
+                         'background-color':'#9f9'});
         }
     });
 })(jQuery);
