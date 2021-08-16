@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name           AO3: [Wrangling] Character Counter when Creating New Tags
-// @description	   find out how long your tag is right as you put it in
-// @version		   1.0.1
-// @author		   Rhine
-// @namespace	   https://github.com/RhineCloud
-// @match		   *://*archiveofourown.org/tags/new
+// @description    find out how long your tag is right as you put it in
+// @version        1.0.1
+// @author         Rhine
+// @namespace      https://github.com/RhineCloud
+// @match          *://*archiveofourown.org/tags/new
 // @match          *://*archiveofourown.org/tags/*/edit
-// @require		   https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js
-// @grant		   none
-// @license		   GPL-3.0 <https://www.gnu.org/licenses/gpl.html>
+// @require        https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js
+// @grant          none
+// @license        GPL-3.0 <https://www.gnu.org/licenses/gpl.html>
 // ==/UserScript==
 
 (function($) {
