@@ -12,20 +12,30 @@
 // ==/UserScript==
 
 (function($) {
+    // find out which page is open
     var page_url = window.location.pathname;
+    // how to find the relevant elements
     var legend_sel = '#edit_tag [for="tag_syn_string_autocomplete"]';
     var field_sel = '#edit_tag #tag_syn_string_autocomplete';
+    // how to find the relevant bits on the new tag page instead
     if (page_url.endsWith('/tags/new')) {
         legend_sel = '#new_tag [for="tag_name"]';
         field_sel = '#new_tag #tag_name';
     }
     var tag_length = 0;
+    // add the neutral/default counter text
     $(legend_sel).append('<span style="font-size:0.8em;">&nbsp; (tag&nbsp;length:&nbsp;' +
                          '<span class="counted_length">...</span>)</span>');
+    // do this thing once the typing is done
     $(field_sel).on('keyup', function() {
+        // find out what was entered
         var tag_input = $(this).val();
+        // figure out the length of the input
         if (tag_input) {tag_length = tag_input.length;}
+        // insert the length into the counter text
         $('.counted_length').text(tag_length);
+        // change the appearance of the field
+        // depending on whether the resulting tag would be too long
         if (tag_length > 100) {
             $(this).css({'color':'white',
                          'background-color':'darkred'});
