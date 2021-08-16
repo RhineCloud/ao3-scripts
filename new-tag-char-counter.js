@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           AO3: [Wrangling] Character Counter when Creating New Tags
 // @description    find out how long your tag is right as you put it in
-// @version        1.0.1
+// @version        1.0.2
 // @author         Rhine
 // @namespace      https://github.com/RhineCloud
 // @match          *://*archiveofourown.org/tags/new
@@ -14,7 +14,7 @@
 (function($) {
     // find out which page is open
     var page_url = window.location.pathname;
-    // how to find the relevant elements
+    // how to find the relevant elements on tag edit pages
     var legend_sel = '#edit_tag [for="tag_syn_string_autocomplete"]';
     var field_sel = '#edit_tag #tag_syn_string_autocomplete';
     // how to find the relevant bits on the new tag page instead
