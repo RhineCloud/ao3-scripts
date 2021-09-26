@@ -2,7 +2,7 @@
 
 As with other userscripts, just point the add-on you're using to the code file of the script you want.
 
-[I've also put it on greasyfork, if you prefer to install from there.](https://greasyfork.org/en/scripts/428350-ao3-wrangling-find-the-tag-in-the-blurb)
+[I've also put them on greasyfork, if you prefer to install from there.](https://greasyfork.org/en/users/676543-rhine)
 
 ## find-tag-in-blurbs
 
@@ -22,6 +22,12 @@ It may be worth noting that when a button uses "check" it means that it'll open 
 Everytime you're done hitting your keys in the Tag Name field on the Create New Tag page or the Synonym of field on Tag Edit pages, it'll update a smol character counter placed right under the legend for the input fields.
 
 It'll also make the colour of the input field change depending on how long your tag is.
+
+## edit-tag-button-on-inbox-comments
+
+Add an Edit Tag button to tag comments in your AO3 inbox, right next to the Reply button, making it much easier to reach the tag editing page to action them. (This also has the side-effect of making tag comments easier to spot.)
+
+It also makes sure that other links to tags pages inside the comment itself lead to the edit pages.
 
 ## n-in-1 wrangling filters
 
