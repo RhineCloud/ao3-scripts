@@ -5,9 +5,9 @@
 // @version     0.2
 // @author      Rhine
 // @namespace   https://github.com/RhineCloud
-// @match       *archiveofourown.org
-// @match       *archiveofourown.org/
-// @match       *archiveofourown.org/users/*/inbox*
+// @match       http*://*archiveofourown.org
+// @match       http*://*archiveofourown.org/
+// @match       http*://*archiveofourown.org/users/*/inbox*
 // @require     https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js
 // @grant       none
 // ==/UserScript==
