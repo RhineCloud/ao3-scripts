@@ -4,8 +4,8 @@
 // @version        1.0.4
 // @author         Rhine
 // @namespace      https://github.com/RhineCloud
-// @match          https://*archiveofourown.org/tags/new
-// @match          https://*archiveofourown.org/tags/*/edit
+// @match          https://*.archiveofourown.org/tags/new
+// @match          https://*.archiveofourown.org/tags/*/edit
 // @require        https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js
 // @grant          none
 // @license        GPL-3.0 <https://www.gnu.org/licenses/gpl.html>
