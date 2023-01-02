@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           AO3: [Wrangling] Character Counter when Creating New Tags
 // @description    find out how long your tag is right as you put it in
-// @version        1.0.4
+// @version        1.0.5
 // @author         Rhine
 // @namespace      https://github.com/RhineCloud
 // @match          https://*.archiveofourown.org/tags/new
