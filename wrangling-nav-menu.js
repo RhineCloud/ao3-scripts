@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        AO3: [Wrangling] Wrangling Navigation Menu
-// @version     1.0
+// @version     1.0.1
 // @description Add a "Wrangling" dropdown menu to the navigation bar
 // @author      Rhine
 // @namespace   https://github.com/RhineCloud
@@ -18,14 +18,16 @@
         {name: "Wrangling Home", path: `/tag_wranglers/${username}`},
         {name: "Wrangling Tools", path: "/tag_wranglings"},
         {name: "Wranglers", path: "/tag_wranglers"},
-        {name: "Search Tag", path: "/tags/search"},
+        {name: "Search Tags", path: "/tags/search"},
         {name: "New Tag", path: "/tags/new"},
         
         // {name: "Fandoms bin", path: "/tag_wranglings?show=fandoms"},
         {name: "Characters bin", path: "/tag_wranglings?show=characters"},
         {name: "Relationships bin", path: "/tag_wranglings?show=relationships"},
         // {name: "Freeforms bin", path: "/tag_wranglings?show=freeforms"},
-        // {name: "Unsorted bin", path: "/unsorted_tags"}
+        // {name: "Unsorted Tags bin", path: "/unsorted_tags"},
+
+        // {name: "My Inbox", path: `/users/${username}/inbox`}
     ];
     
     const wranglingMenu = document.createElement("li");
