@@ -4,6 +4,12 @@ As with other userscripts, just point the add-on you're using to the code file o
 
 [I've also put them on greasyfork, if you prefer to install from there.](https://greasyfork.org/en/users/676543-rhine)
 
+## edit-tag-button-on-inbox-comments
+
+Add an Edit Tag button to tag comments in your AO3 inbox, right next to the Reply button, making it much easier to reach the tag editing page to action them. (This also has the side-effect of making tag comments easier to spot.)
+
+It also makes sure that other links to tags pages inside the comment itself lead to the edit pages.
+
 ## find-tag-in-blurbs
 
 It compares each tag in a work blurb with the tag in the title of the page (optionally also with its child tags) and colours the ones that match.
@@ -17,18 +23,24 @@ There's a SETTINGS section at the beginning where you can change:
 
 It may be worth noting that when a button uses "check" it means that it'll open the tags landing page, while if there's only "mark" it means that all the necessary data is available already.
 
+## n-in-1 wrangling filters
+
+Check out the separate [n-in-1 filters readme doc](https://github.com/RhineCloud/ao3-scripts/blob/main/n-in-1-filters-readme.md#n-in-1-wrangling-home-filters).
+
 ## new-tag-char-counter
 
 Everytime you're done hitting your keys in the Tag Name field on the Create New Tag page or the Synonym of field on Tag Edit pages, it'll update a smol character counter placed right under the legend for the input fields.
 
 It'll also make the colour of the input field change depending on how long your tag is.
 
-## edit-tag-button-on-inbox-comments
+## tag-counter-when-posting-editing-works
 
-Add an Edit Tag button to tag comments in your AO3 inbox, right next to the Reply button, making it much easier to reach the tag editing page to action them. (This also has the side-effect of making tag comments easier to spot.)
+Have you ever wondered how close you were to hitting the tag limit when posting or editing a work? Here's a handy counter that will do the counting for you!
 
-It also makes sure that other links to tags pages inside the comment itself lead to the edit pages.
+## wrangling-home-search-box
 
-## n-in-1 wrangling filters
+For every wrangler with way too many fandoms on their wrangling page, here's a search box that allows you to filter them by their name, as you enter text into the box.
 
-Check out the separate [n-in-1 filters readme doc](https://github.com/RhineCloud/ao3-scripts/blob/main/n-in-1-filters-readme.md#n-in-1-wrangling-home-filters).
+## wrangling-nav-menu
+
+Next to the usual Fandoms, Browse, Search, and About menus in the navigation bar on each page, there'll be a Wrangling menu with handy wrangling links!
