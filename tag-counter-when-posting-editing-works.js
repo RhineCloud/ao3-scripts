@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        AO3: Tag counter when posting/editing works
 // @namespace   https://github.com/RhineCloud
-// @version     1.0
+// @version     1.0.1
 // @description Count number of tags that count towards the 75 limit on works
 // @grant       none
 // @author      Rhine
@@ -53,7 +53,7 @@ function is_within_limits() {
 }
 
 // insert the counter on the page
-const style_counter = 'position: fixed; right: 0; bottom: .5em; z-index: 10;';
+const style_counter = 'position: fixed; right: 0; bottom: 2em; z-index: 10;';
 const fieldset_counter = document.createElement('fieldset');
 fieldset_counter.innerHTML = '<legend>Tag Counter</legend>' +
     '<h3 class="landmark heading">Tag Counter</h3>' +
