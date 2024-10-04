@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name        AO3: [Wrangling] Find the Tag in the Blurb
 // @namespace   https://github.com/RhineCloud
-// @version     1.1
+// @version     1.2
 // @description Make the tag of the page you're on (and up to 300 synonymous/meta/sub/parent/child tags) more visually distinct
 // @grant       none
 // @author      Rhine
 // @include     /^https?:\/\/[^\/]*archiveofourown.org\/(works|bookmarks)\?.*tag_id=.+/
 // @include     /^https?:\/\/[^\/]*archiveofourown.org\/tags\/[^\/]+(\/((works|bookmarks).*)?)?$/
+// @exclude     /^https?:\/\/[^\/]*archiveofourown.org\/tags\/[^\/]+\/(edit|wrangle|comments|troubleshooting).*/
 // @license     GPL-3.0 <https://www.gnu.org/licenses/gpl.html>
 // ==/UserScript==
 
@@ -24,6 +25,13 @@ const STYLE_MAP = new Map([
     ["child", "color: #fff; background: #090; font-weight: bold;"]
 ]);
 
+// CACHE SETTINGS
+// set these to either true or false
+// automatically cache related tags
+const AUTO_CACHE_RELATED = false
+// show the "Cache related tags" button
+const SHOW_CACHE_BUTTON = true
+
 
 // MAIN FUNCTION
 // find matching tags in blurbs and add styling
@@ -38,7 +46,12 @@ if (1 < STYLE_MAP.size) {
         tag_id = document.querySelector("div.merger.module a.tag").getAttribute("href").split("/")[2];
     }
 
-    // find further related tags
+    // automatically cache related tags if applicable
+    if (AUTO_CACHE_RELATED && sessionStorage.getItem("cached_tag") !== tag_id) {
+        cache_related_tags().then(() => {});
+    }
+
+    // find further related tags if applicable
     const button = document.createElement("li");
     if (sessionStorage.getItem("cached_tag") === tag_id) {
         button.innerHTML = `<span class="current">Cached related tags!</span>`;
@@ -48,7 +61,9 @@ if (1 < STYLE_MAP.size) {
         button.innerHTML = "<a>Cache related tags</a>";
         button.addEventListener("click", cache_related_tags);
     }
-    document.querySelector("#main ul.navigation.actions").prepend(button);
+    if (SHOW_CACHE_BUTTON) {
+        document.querySelector("#main ul.navigation.actions").prepend(button);
+    }
 }
 
 
@@ -76,8 +91,10 @@ async function cache_related_tags() {
     }
     sessionStorage.setItem("cached_tag", tag_id);
 
-    document.querySelector("#cache_related_tags").innerHTML = `<span class="current">Cached related tags!</span>`;
-    document.querySelector("#cache_related_tags").removeEventListener("click", cache_related_tags);
+    if (SHOW_CACHE_BUTTON) {
+        document.querySelector("#cache_related_tags").innerHTML = `<span class="current">Cached related tags!</span>`;
+        document.querySelector("#cache_related_tags").removeEventListener("click", cache_related_tags);
+    }
     style_related_tags();
 }
 
