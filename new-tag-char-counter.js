@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           AO3: [Wrangling] Character Counter when Creating New Tags
 // @description    find out how long your tag is right as you put it in
-// @version        1.0.5
+// @version        1.1
 // @author         Rhine
 // @namespace      https://github.com/RhineCloud
 // @match          https://*.archiveofourown.org/tags/new
@@ -36,7 +36,7 @@
         $('.counted_length').text(tag_length);
         // change the appearance of the field
         // depending on whether the resulting tag would be too long
-        if (tag_length > 100) {
+        if (tag_length > 150) {
             $(this).css({'color':'white',
                          'background-color':'darkred'});
         } else {
