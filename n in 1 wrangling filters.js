@@ -112,8 +112,8 @@ var known_fandoms = my_fandoms.trim().split('\n');
 				case 'Anime & Manga':
 					detected_media = 'animanga';
 					break;
-				case 'Anthropomorphic':
-					detected_media = 'anthro';
+				case 'Aropomorphic':
+					detected_media = 'aro';
 					break;
 				case 'Big Finish Audio':
 					detected_media = 'audio';
@@ -310,11 +310,11 @@ var known_fandoms = my_fandoms.trim().split('\n');
 		}
 		
 		// grab various uf/uw numbers
-		var uf_ff = $(this).find('td:nth-child(4)').text();
-		var uw_char = $(this).find('td:nth-child(5)').text();
-		var uw_rel = $(this).find('td:nth-child(6)').text();
-		var uw_ff = $(this).find('td:nth-child(7)').text();
-		var uw_all = $(this).find('td').slice(3,6).text();
+		var uf_ff = $(this).find('td[title="unfilterable freeforms"]').text();
+		var uw_char = $(this).find('td[title="unwrangled characters"]').text();
+		var uw_rel = $(this).find('td[title="unwrangled relationships"]').text();
+		var uw_ff = $(this).find('td[title="unwrangled freeforms"]').text();
+		var uw_all = $(this).find('td[title="unwrangled"]').text();
 		
 		// check the unwrangled tags
 		if (uw_all !== '   ') {
